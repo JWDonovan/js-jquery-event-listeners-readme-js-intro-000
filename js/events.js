@@ -17,6 +17,14 @@ function submitIt() {
   });
 }
 
+function pressIt() {
+  $('input').on('keydown', function(e) {
+    if (e.keyCode === 71) {
+      alert('You pressed G.');
+    }
+  });
+}
+
 $(document).ready(function(){
 
 // call functions here
